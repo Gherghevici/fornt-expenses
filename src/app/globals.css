@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+.elipse1,.elipse2,.elipse3{
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    border-radius: 50%;
+    bottom: -50%;
+    transform: translateY(50%);
+   
+}
+.elipse2{
+    transform: translate(10%,50%);
+}
+.elipse3{
+    transform: translate(20%,50%);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+}
+.svg circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: #e5e7eba7;
+    stroke-width: 1.7em;
   }
+  .svg .circle-bar {
+    stroke: #fb923c;
+    stroke-linecap: round;
+    transform: rotate(270deg);
+    transform-origin: 50% 50%;
+    
+  }
+.circle{
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 2em auto;
+    box-shadow: 0 0 1em black;
+    border-radius: 100%;
+    position: relative;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+circle.dot-circle{
+    stroke: none;
+    fill: #fff;
 }
