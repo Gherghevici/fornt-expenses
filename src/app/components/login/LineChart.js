@@ -4,7 +4,6 @@ const LineChart  = ()=>{
             {
             id:1,
             month:"aug",
-            
         }
     ] 
 

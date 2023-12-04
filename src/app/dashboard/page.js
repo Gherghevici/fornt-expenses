@@ -9,15 +9,18 @@ const Dashboard=()=>{
 
     return (
         <>
-            {/* <RightSide/> */}
-            {/* <ProgresRing/> */}
-            {/* <div className="flex gap-3 bg-gray-300 p-5">
+        <div className="flex overflow-auto">
+        <RightSide />
+            <ProgresRing/>
+            <div className="flex gap-3 bg-gray-300 p-5">
                 <DashboardTitleCard  title={"Balance"} price={123} icon={<FontAwesomeIcon icon={faWallet} />}/>
                 <DashboardTitleCard  title={"Income"} price={123} icon={<FontAwesomeIcon icon={faHandHoldingDollar} />}/>
                 <DashboardTitleCard  title={"Savings"} price={123} icon={<FontAwesomeIcon icon={faPiggyBank} />}/>
                 <DashboardTitleCard  title={"Expenses"} price={123} icon={<FontAwesomeIcon icon={faReceipt} />}/>
-            </div> */}
+            </div>
             <TransactionList/>
+        </div>
+            
         </>
     )
 } 

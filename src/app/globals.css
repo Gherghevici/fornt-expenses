@@ -5,7 +5,9 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
+    background-color: rgb(243 244 246);
 }
 .elipse1,.elipse2,.elipse3{
     position: absolute;
@@ -14,6 +16,7 @@ body{
     border-radius: 50%;
     bottom: -50%;
     transform: translateY(50%);
+    z-index: -1;
    
 }
 .elipse2{
